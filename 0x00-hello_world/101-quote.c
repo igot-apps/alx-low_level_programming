@@ -1,13 +1,13 @@
 #include <stdio.h>
-
-#include <unistd.h>
+#include <stdlib.h>
 
 /**
- * main - Main entry point of the script
- * Return: should Always return 1 (Success) 
+ * main - Entry point of the main function
+ * Return: Always 1 (Success)
  */
-int main(void) {
-  write(2,
-    "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
-  return (1);
+int main(void)
+{
+	write(STDOUT_FILENO, "and that piece of art is useful
+			\" - Dora Korpar, 2015-10-19\n", 59);
+	return (1);
 }
