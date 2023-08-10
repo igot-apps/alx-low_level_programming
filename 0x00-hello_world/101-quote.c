@@ -3,10 +3,7 @@
 
 /**
 * main - Main entry point of the script
-*
-*
-*
-* Return: Always 1 (Success) 
+* Return: should Always return 1 (Success) 
 */
 int main(void)
 {
