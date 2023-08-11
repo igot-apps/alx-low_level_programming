@@ -1,34 +1,33 @@
 #include <stdio.h>
 
 /**
- * main - a simple program thatprints all possible combinations of two two-digit numbers
- * combinations of two digit integers no duplicates is allowed .
- *
+ * main - print comb5
+ * combination no duplicates
  * Return: 0 on success
  */
 int main(void)
 {
-	int ifirstx;
+	int ifirstt;
 	int i;
-	int jfirsty;
+	int jfirst;
 	int j;
 
-	for (ifirstx = 48; ifirstx < 58; ifirstx++)
+	for (ifirstt = 48; ifirstt < 58; ifirstt++)
 	{
 		for (i = 48; i < 58; i++)
 		{
 			j = i + 1;
-			jfirsty = ifirstx;
-			for (; jfirsty < 58; jfirsty++)
+			jfirst = ifirstt;
+			for (; jfirst < 58; jfirst++)
 			{
 				for (; j < 58; j++)
 				{
-					putchar(ifirstx);
+					putchar(ifirstt);
 					putchar(i);
 					putchar(' ');
-					putchar(jfirsty);
+					putchar(jfirst);
 					putchar(j);
-					if (ifirstx != 57 || jfirsty != 57 || i != 56 || j != 57)
+					if (ifirstt != 57 || jfirst != 57 || i != 56 || j != 57)
 					{
 						putchar(',');
 						putchar(' ');
