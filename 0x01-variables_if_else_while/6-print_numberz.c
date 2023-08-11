@@ -1,18 +1,17 @@
+#include <stdlib.h>
 #include <stdio.h>
+
 /**
- * main - prints the numbers from 0 to 9 without making use of char or printf/puts,
- * and the putchar 2x max
-(*
- * Return: 0 on success
+ * main - Point-of-entry
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i = '0';
+	int i;
 
-	while (i <= '9')
+	for (i = '0'; i <= '9'; i++)
 	{
 		putchar(i);
-		i++;
 	}
 	putchar('\n');
 	return (0);
