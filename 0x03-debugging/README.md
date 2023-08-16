@@ -1,0 +1,1 @@
+Debugging involves identifying and rectifying existing and potential errors, commonly referred to as 'bugs', within a software code. These bugs can lead to unexpected behavior or crashes. It is essential to create the prototype in your 'main.h' file for your code to function correctly.
