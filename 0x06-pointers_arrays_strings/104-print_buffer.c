@@ -1,10 +1,10 @@
 #include "main.h"
 #include <stdio.h>
-/**f
- * print_line - printssfsdfs a ssdffdss bysdfsdtes
- * @c: buffer tosdfsdfsdfprint
- * @s: bytes of buffer to print
- * @l: line of buffer ssdto print
+/**
+ * print_line - printsggg
+ * @c: buffergggg
+ * @s: bytesuffer to print
+ * @l: lineof buffer to print
  *
  * Return: void
  */
@@ -56,3 +56,4 @@ putchar('\n');
 if (size == 0)
 putchar('\n');
 }
+
