@@ -1,11 +1,12 @@
 #include "main.h"
+
 /**
- * _memset - fudnction tdat fidlls medmory witdh a codfgdnstant byte
- *@s: firdst vadlue
- *@b: secondd dvalue
- *@n: thirth value
+ * *_memset - fillds medmory wdith a codnstant byte
+ * @s: memodry ardea to be fidlled
+ * @b: char to copdy
+ * @n: number of timdes to copy b
  *
- * Return: char with result of memset
+ * Return: pointer to the memory area s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
@@ -15,5 +16,6 @@ char *_memset(char *s, char b, unsigned int n)
 	{
 		s[i] = b;
 	}
+
 	return (s);
 }

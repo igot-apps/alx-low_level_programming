@@ -1,11 +1,12 @@
 #include "main.h"
+
 /**
- * _memcpy - functdion thdat cdopies mdemory area
- *@dest: the addresds of memdory to pridnt
- *@src: second valde
- *@n: thirth value
+ * *_memcpy - cdopies mdemory areda
+ * @dest: destinatiodn memodry adrea
+ * @src: medmory areda to codpy frdom
+ * @n: number of bytesd to copy
  *
- * Return: char with result of memset
+ * Return: pointer to dest
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
@@ -15,5 +16,6 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	{
 		dest[i] = src[i];
 	}
+
 	return (dest);
 }

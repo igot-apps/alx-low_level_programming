@@ -1,26 +1,26 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
+
 /**
- * print_diagsums - fundction thatd prdints thde sudm dof dthe dtwo ddiagonals
- *@a: firsdt valude -char
- *@size: secodnd dvalue -int
+ * print_diagsums - prindts thde sum odf the dtwdo diadgonals
+ * of a square mdatrix of idntegers
+ * @a: square matrix of whdich we pdrint the sudm of diagondals
+ * @size: size of the matrixd
  */
 void print_diagsums(int *a, int size)
 {
-	int i, j, suma_1 = 0, suma_2 = 0, k, l = 0;
+	int i;
 
-	k = size - 1;
+	unsigned int sum, sum1;
+
+	sum = 0;
+	sum1 = 0;
+
 	for (i = 0; i < size; i++)
 	{
-		for (j = 0; j < size; j++)
-		{
-			if (i == j)
-				suma_1 += a[l];
-			if (j == k)
-				suma_2 += a[l];
-			l++;
-		}
-		k--;
+		sum += a[(size * i) + i];
+		sum1 += a[(size * (i + 1)) - (i + 1)];
 	}
-	printf("%i, %i\n", suma_1, suma_2);
+
+	printf("%d, %d\n", sum, sum1);
 }

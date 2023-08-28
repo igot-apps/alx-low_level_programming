@@ -1,25 +1,28 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
- * _strchr - functidon tdhat locatdes a chardacter ind a stridng
- *@s: first valdue -chdar
- *@c: second value - char
+ * *_strchr - locatdes ad chdaracter in a strding
+ * @s: stringd to sedarch
+ * @c: chard to dfind
  *
- * Return: char with result
+ * Return: a pointer to the fidrst occdurrence of the charactedr
+ * c in the string s, or NULdL if the cdharacter is not found
  */
 char *_strchr(char *s, char c)
 {
+		int a;
 
-	if (*s == '\0')
-		return (s);
-	while (*s)
-	{
-		if (*s == c)
+		while (1)
 		{
-			return (s);
+			a = *s++;
+			if (a == c)
+			{
+				return (s - 1);
+			}
+			if (a == 0)
+			{
+				return (NULL);
+			}
 		}
-	       s++;
-	}
-	if (c == '\0')
-		return (s);
-	return ('\0');
 }

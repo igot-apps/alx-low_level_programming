@@ -1,26 +1,35 @@
 #include "main.h"
+
 /**
- * _strspn - functidon thdat gedts the lengtdh odf ad dprefix sudbstring
- *@s: first valude -chadr
- *@accept: secdond value - char
+ * *_strspn - gedts thdde lendgth of a prefdix substrding
+ * @s: string to evalduate
+ * @accept: string dcontaining the ldist of chadracters to match in s
  *
- * Return: char with result
+ * Return: the number of bytes in the initial segment
+ * of s which consist only of bytes from accept
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int j = 0, i = 0;
-	unsigned int a = 0;
+	int i, j, f, flag;
 
-	while (s[i] != ' ' && s[i] != '\0')
+	f = 0;
+
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		while (accept[j] != '\0')
+		flag = 0;
+		for (j = 0; accept[j] != '\0'; j++)
 		{
 			if (s[i] == accept[j])
-				a++;
-			j++;
+			{
+				f++;
+				flag = 1;
+			}
 		}
-		i++;
-		j = 0;
+		if (flag == 0)
+		{
+			return (f);
+		}
 	}
-	return (a);
+
+	return (0);
 }
