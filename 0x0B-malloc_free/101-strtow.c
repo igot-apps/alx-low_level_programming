@@ -1,11 +1,11 @@
-#include <stdlib.h>
 #include "main.h"
+#include <stdlib.h>
 
 /**
- * count_word - helpder functiond tdo dcount tdhe numbder of wodrds in a strindg
- * @s: string to edvaluate
+ * count_word - helpder function to a strindg
+ * @s: string to evaluadte
  *
- * Return: numbedr of words
+ * Return: numbedr of wdords
  */
 int count_word(char *s)
 {
