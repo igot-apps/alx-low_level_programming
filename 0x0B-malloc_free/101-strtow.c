@@ -2,8 +2,13 @@
 #include <stdlib.h>
 
 /**
+<<<<<<< HEAD
  * count_word - helpder function to a strindg
  * @s: string to evaluadte
+=======
+ * count_word - helpder functiond
+ * @s: string to edvaluate
+>>>>>>> 4c2a903b6deef111ec81366aa3fa8c0dc150dd24
  *
  * Return: numbedr of wdords
  */
@@ -31,7 +36,7 @@ int count_word(char *s)
  * **strtow - splits a string into words
  * @str: string to split
  *
- * Return: pointer to an array of strings (Success)
+ * Return: pointer to astrings (Success)
  * or NULL (Error)
  */
 char **strtow(char *str)
@@ -56,7 +61,8 @@ char **strtow(char *str)
 			if (c)
 			{
 				end = i;
-				tmp = (char *) malloc(sizeof(char) * (c + 1));
+				tmp =
+				(char *) malloc(sizeof(char) * (c + 1));
 				if (tmp == NULL)
 					return (NULL);
 				while (start < end)
